@@ -1,0 +1,349 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of CSS Reset*/
+
+/*global styles*/
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin: 28px 0px;
+    background-color: whitesmoke;
+}
+.wrapper {
+    width: 320px;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 900;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+a:link {
+    color: black;
+  }
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: black;
+  }
+  a:active {
+    color: black;
+  }
+.navigation li {
+    width: 100%;
+    background-color: white;
+    padding: 0.4rem 2.5rem;
+    margin: 0.6rem 0rem;
+}
+.navigation li:hover {
+    background: darkslategray;
+}
+.navigation li a:hover {
+    color: white;
+}
+.navigation a {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.navigation li a {
+    list-style-type: none;
+    text-decoration: none;
+}
+/*footer nav*/
+.footer-nav {
+    display: none;
+}
+/*end of footer nav*/
+figure img, .hero img {
+    max-width: 280px;
+}
+hr {
+    width: 75%;
+}
+/*end of global styles*/
+
+.logo {
+    padding: 1rem 0rem;
+}
+.hero {
+    width: 100%;
+    margin: 2.5rem 0rem;
+}
+.hero-intro p {
+    padding: 1.2rem 0.5rem;
+    color: gray;
+}
+.skillsets {
+    background-color: white;
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+}
+.skillsets h2 {
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+.skillsets hr {
+    margin-bottom: 2rem;
+}
+.skillsets figure {
+    margin: 0rem 0.5rem 3rem 0.5rem;
+}
+#portfolio {
+    background-color: white;
+    width: 100%;
+    padding: 2.5rem 0.8rem;
+}
+#portfolio h2 {
+    margin-bottom: 2.5rem;
+    font-weight: 900;
+}
+figure img {
+    margin: 2.2rem 0rem 2rem 0rem;
+}
+figure h3 {
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+figure p {
+    margin-bottom: 1rem;
+}
+#contact {
+    padding: 2.2rem 1rem;
+}
+#contact h2 {
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.contact-description p {
+    margin-bottom: 2rem;
+}
+.contact-info p {
+    margin-bottom: 1rem;
+}
+.contact-info span {
+    font-weight: 900;
+}
+footer {
+    padding-bottom: 2rem;
+}
+footer hr {
+    color: lightgray;
+}
+.footer-logo {
+    display: inline;
+    float: left;
+}
+.footer-logo h3 {
+    font-weight: 900;
+}
+
+.back-to-top {
+    display: inline;
+    float: right;
+}
+.back-to-top p {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+.back-to-top a {
+    text-decoration: none;
+}
+
+/* Media Queries for tablets */
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    .navigation li {
+        display: inline;
+        padding: 0rem 2rem;
+        background-color: whitesmoke;
+        
+    }
+
+    .hero-intro img {
+        float: right;
+        margin-left: 1rem;
+    }
+
+    .hero-intro p {
+        
+        text-align: left;
+    }
+
+    figure {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .skillsets figure {
+        display: inline-block;
+        width:30%;
+    }
+
+    #portfolio {
+        background-color: white;
+        width: 100%;
+        padding: 2.5rem 0.1rem;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    footer {
+        
+        padding-right: 0px;
+    }
+
+    .footer-nav {
+        display: inline;
+        
+        text-align: right;
+        background-color: burlywood;
+        
+    }
+
+    .footer-nav ul li {
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0rem 0rem 0rem 1.5rem;
+    }
+
+    .footer-nav ul li a {
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+  }
+
+  /*Media Queries for Desktops*/
+@media only screen and (min-width: 1024px) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-bottom: 3.5rem;
+        
+    }
+
+    .navigation li {
+        background-color: white;
+        padding: 0.4rem 1.5rem;
+        margin: 0.6rem 0rem;
+    }
+
+    .hero {
+        margin: 5.5rem 0rem 5.5rem 0rem;
+        clear: both;
+    }
+
+    .hero-intro {
+        padding-top: 2.6rem;
+    }
+
+    .hero-intro img {
+        float: right;
+        margin-left: 2rem;
+    }
+
+    .logo {
+        display: inline;
+    }
+
+    .logo h1 {
+        width: 400px;
+        float: left;
+    }
+
+    nav.navigation {
+        display: inline;
+        float: right;
+    }
+
+    .navigation ul {
+        width: 500px;
+    }
+
+    figure {
+        padding-bottom: 3rem;
+        width: 30%;
+    }
+
+    .contact-description {
+        padding: 0rem 8rem;
+    }
+}
+
+
